@@ -1,0 +1,91 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  pwd
+    4  ls
+    5  cd /desktop
+    6  ls .
+    7  cd /
+    8  pwd
+    9  cd /home/user/desktop
+   10  cd usr
+   11  pwd
+   12  cd /
+   13  pwd
+   14  ls /
+   15  ls /home/user
+   16  cd /home/user
+   17  ls
+   18  cd /documents
+   19  ls
+   20  ls /home/sc
+   21  pwd
+   22  ls
+   23  cd ~/Desktop
+   24  pwd
+   25  ls
+   26  cd ~
+   27  cd ~/Desktop
+   28  cd
+   29  pwd
+   30  cd Desktop
+   31  mkdir A
+   32  ls
+   33  mkdir B
+   34  mkdir C
+   35  ls
+   36  mkdir D
+   37  mkdir --help
+   38  rm a
+   39  rm A
+   40  rm dirA
+   41  rmdir A
+   42  rmdir B
+   43  rmdir C
+   44  rmdir D
+   45  date
+   46  ls -l
+   47  cd
+   48  ls -l
+   49  cd etc
+   50  cd /etc
+   51  ls
+   52  ls | head
+   53  ls | end
+   54  ls | tail
+   55  ls | head -n 3 | wc -l
+   56  ls | wc -l
+   57  ls | head -n 3 | wc -m
+   58  ls | head -n 3 | wc -c
+   59  ls | head -n 3
+   60  cd
+   61  java
+   62  ls | head -n 3
+   63  ls | head -n 3 |wc -l
+   64  ls | head -n 3 |wc -w
+   65  ls | head -n 3 |wc -m
+   66  java -version
+   67  python
+   68  a=123
+   69  echo
+   70  echo a
+   71  echo $a
+   72  a="Hello"
+   73  b="World"
+   74  echo $a "," $b
+   75  echo $a, $b
+   76  a=2
+   77  b=6
+   78  echo `$a+$b`
+   79  echo `expr $a+$b`
+   80  count=`expr $a+$b`
+   81  exho $count
+   82  echo $count
+   83  echo `count`
+   84  expr $a+$b
+   85  count=$(expr a+b)
+   86  echo $count
+   87  count=$(expr $a+$b)
+   88  echo $count
+   89  echo $((a+b))
+   90  history
+   91  history > h.txt
