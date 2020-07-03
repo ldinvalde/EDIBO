@@ -1,0 +1,134 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  nano
+    4  vim
+    5  nano
+    6  ls -tl
+    7  ls -lt
+    8  nano text1.txt
+    9  nano abc.txt
+   10  nano abc1.txt
+   11  ls -lt
+   12  mkdir ABC
+   13  lks -lt
+   14  ls -lt
+   15  cd ABC/
+   16  ls
+   17  ls -lta
+   18  pwd
+   19  cd .
+   20  pwd
+   21  ls -lt
+   22  ls -lta
+   23  cd ./
+   24  cd ..
+   25  pwd
+   26  nano abc.txt
+   27  cp abc.txt abc.txt
+   28  cp abc.txt abc1.txt
+   29  mv abc.txt abc1.txt ~/ABC
+   30  cd ABC/
+   31  pwd
+   32  ls
+   33  mb cp abc.txt abc2.txt ~
+   34  mv cp abc.txt abc2.txt ~
+   35  cd
+   36  cat abc.txt
+   37  hexdump -c abc.txt
+   38  hexdump -b abc.txt
+   39  hexdump -C abc.txt
+   40  xxd abc.txt
+   41  xxd -b abc.txt
+   42  hexdump -C abc.bin
+   43  whereis ls
+   44  ls -l /bin/ls
+   45  #sdf
+   46  sdf
+   47  echo $PATH
+   48  nano
+   49  nano first_script.sh
+   50  bash first_script.sh
+   51  PATH=$PATH:./
+   52  first_script.sh
+   53  chmod 744 first_script.sh
+   54  ls -l first_script.sh
+   55  first_script.sh
+   56  git clone https://githum.com/ldinvalde/EDIBO
+   57  git clone https://github.com/ldinvalde/EDIBO
+   58  ls
+   59  cd EDIBO
+   60  nano git-upload
+   61  chmod 740 git-upload
+   62  ls -lt
+   63  nano git-upload
+   64  git-upload
+   65  cd
+   66  echo $user
+   67  echo $USER
+   68  echo $HOME
+   69  cd /
+   70  pwd
+   71  cd $HOME
+   72  PWD
+   73  pwd
+   74  echo $PS1
+   75  PS1=$
+   76  PS1=$ 
+   77  PS1=$" "
+   78  PS1=$
+   79  PS1="$ "
+   80  PS1="LD "
+   81  cd
+   82  pwd
+   83  PS1=LD: \w\a\]${debian_chroot:+($debian_chroot)}\LD:\w\$
+   84  sd
+   85  whereis pico
+   86  cat /usr/bin/pico
+   87  62;c
+   88  pwd
+   89  ls -l /usr/bin/
+   90  ls -l /usr/bin/ | wc -l
+   91  ls -l /usr/bin/pico
+   92  ls -l /etc/alternatives/pico
+   93  ls -l /bin/nano
+   94  PS!=#
+   95  PS1=#
+   96  vim
+   97  vim 01.sh
+   98  ls -l
+   99  PS!="# "
+  100  PS1="# "
+  101  wc 01.sh
+  102  chm
+  103  chmod +x 01.sh
+  104  ls -l 01.sh
+  105  nano 01.sh
+  106  vim.
+  107  vim .
+  108  mc
+  109  01.sh
+  110  vim 01.sh
+  111  fg
+  112  ls
+  113  ./01.sh
+  114  vim 01.sh
+  115  ./01.sh
+  116  vim 01.sh
+  117  01.sh
+  118  vim 01.sh
+  119  ./01.sh
+  120  $ time ./01.sh
+  121  time ./01.sh
+  122  vim 01.sh
+  123  for n in {1..10}; do echo "Hello World"; done
+  124  for n in {1..10} do ./01.sh; done
+  125  for n in {1..10} do 01.sh; done
+  126  vim 01.sh
+  127  ./01.sh
+  128  for i in {0..5}; do echo "$((i**i))"; done
+  129  for i in {0..5}; do echo "$i $((i**i))"; done
+  130  for i in {0..5}; do echo "$i $((i*i))"; done
+  131  for i in {0..5}; do echo "$i $((i*i))"; done
+  132  PS1="# "
+  133  history
+  134  history >lesson3.txt
