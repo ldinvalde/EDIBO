@@ -1,0 +1,213 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  wget
+    4  PS1="LD$ "
+    5  man wget
+    6  var="123"
+    7  echo "obase=2; $var" | bc
+    8  var="1111011"
+    9  echo "obase=10; $var" |bc
+   10  echo "obase=10; $var" | echo "obase=10; $var"
+   11  echo "obase=2; $var" | bc
+   12  echo "ibase=2; $var" | bc
+   13  123%2
+   14  "123%2"
+   15  $((123%2))
+   16  echo $((123%2))
+   17  var="123"
+   18  while [$var/2]; do x=$((var%2)) x>>output; done
+   19  while [$var/2]; do x=$((var%2)) echo $x; done
+   20  while [ $var/2 ]; do x=$((var%2)) echo $x; done
+   21  while [ $n -le 0 ]; do echo n=$((var%2)); done
+   22  while [ $n 0 ]; do echo n=$((var%2)); done
+   23  echo $var
+   24  while (( $var>=0 )); do echo var=$((var%2));done
+   25  while [$var >= 0]; do echo $var=$((var%2)); done
+   26  x=0
+   27  while [$var >= 0]; do echo $x=$((var%2)); done
+   28  for ((i=0; i<10;i++)); do echo $i; done
+   29  for ((i=123; i<=0;)); do echo i=$((i%2)); done
+   30  man while
+   31  i=123
+   32  while [$i -lt 0]; do echo $((i%2)); i=$((i%2)); done
+   33  while [$i>=0]; do echo $((i%2)); i=$((i%2)); done
+   34  while [$i>=0]; do echo $((i%2)) i=$((i%2)); done
+   35  while [$i =mt 0]; do echo $((i%2)) i=$((i%2)); done
+   36  for ((i=0; i<10;i++)); do echo $i; done
+   37  n=1
+   38  while [$n -le 5]; do echo "Welcome $n times." n=$((n+1)); done
+   39  while man
+   40  man while
+   41  for ((i=0; i<10;i++)); do echo $i; done
+   42  for ((i=123; i>=0; i/2)); do echo $((i%2)); done
+   43  for ((i=123; i/2>=0; i/2)); do echo $((i%2)); done
+   44  for ((i=9; i/2>=0; i/2)); do echo $((i%2)); done
+   45  i=123
+   46  var=$((i/2))
+   47  nano test.sh
+   48  chmod +x test.sh
+   49  ./test.sh
+   50  nano test.sh
+   51  man until
+   52  for ((i=5; i>=0; i--)); do
+   53  for ((i=5; i>=0; i--)); do echo "Counter: $i"; done
+   54  for ((i=5; i>=0; i/2)); do echo "Counter: $i"; done
+   55  i=0
+   56  while [ $i -lt 4 }; do echo $i i=$((i+1)); done
+   57  while [ $i -lt 4 ]; do echo $i i=$((i+1)); done
+   58  while [ $i<<=4 ]; do echo $i i=$((i+1)); done
+while [ $i<<=4 ]; do echo $i i=$((i+1)); done
+while [ $i<<=4 ]; do echo $i i=$((i+1)); done
+while [ $i<=4 ]; do echo $i i=$((i+1)); done
+
+
+   59  while [ $i<=4 ]; do echo $i i=$((i+1)); done
+   60  while [ $i<4 ]; do echo $i i=$((i+1)); done
+   61  while [$i<4]; do echo $i i=$((i+1)); done
+   62  while [[$i<4]]; do echo $i i=$((i+1)); done
+   63  while [$i<4]; do echo $i i=$((i+1)); done
+   64  while [ $i<4 ]; do echo $i i=$((i+1)); done
+   65  while [ $i<4 ]; do echo $i $((i+1)); done
+   66  while [ 1 ]; do echo $i $((i+1)); done
+   67  echo $i
+   68  while [ $i<=4 ]; do echo $i $((i+1)); done
+   69  while [ $i <= 4 ]; do echo $i $((i+1)); done
+   70  while [ $i == 4 ]; do echo $i $((i+1)); done
+   71  while [ $i == $i ]; do echo $i $((i+1)); done
+   72  while [ $i == 4 ]; do echo $i $((i+1)); done
+   73  while [ $i -lt 4 ]; do echo $i $((i+1)); done
+   74  while [ $i -lt 4 ]; do echo $i i=$((i+1)); done
+   75  while [ $i -lt 4 ]; do echo $i; $((i+1)); done
+   76  while [ $i -lt 4 ]; do echo $i; echo $((i+1)); done
+   77  while [ $i -lt 4 ]; do echo $i; echo $((i+1)) i++;  done
+   78  while [ $i -lt 4 ]; do echo $i; echo $((i+1)); i++;  done
+   79  while [ $i -lt 4 ]; do echo $i; echo $((i+1)); i=$((i+1));  done
+   80  while [ $i -lt 4 ]; do echo $i; i=$((i+1));  done
+   81  while [ $i -lt 4 ]; do echo $i; echo $((i+1)); i=$((i+1));  done
+   82  echo $i
+   83  i=0
+   84  while [ $i -lt 4 ]; do echo $i; echo $((i+1)); i=$((i+1));  done
+   85  i=0
+   86  while [ $i -lt 4 ]; do echo $i; i=$((i+1));  done
+   87  while [ $i -gt 0 ]; do echo $((i%2)); i=$((i/2));  done
+   88  i=123
+   89  while [ $i -gt 0 ]; do echo $((i%2)); i=$((i/2));  done
+   90  declare -A my_array
+   91  my_array=`while [ $i -gt 0 ]; do echo $((i%2)); i=$((i/2)); done`
+   92  echo ${my_array[@]}
+   93  my_array=(`while [ $i -gt 0 ]; do echo $((i%2)); i=$((i/2)); done`)
+   94  echo ${my_array[@]}
+   95  declare -a my_array
+   96  declare -a my_arrays
+   97  my_array2=(foo bar)
+   98  my_array3[0]=first
+   99  echo ${my_arrays[@]}
+  100  echo ${my_array2[@]}
+  101  echo ${my_array3[@]}
+  102  echo ${my_array2[*]}
+  103  echo ${my_array3[*]}
+  104  echo ${my_array2[0]}
+  105  echo ${my_array2[1]}
+  106  my_array4[5]=five
+  107  echo ${my_array4[*]}
+  108  echo ${my_array4[0]}
+  109  echo ${my_array4[1]}
+  110  echo ${my_array4[3]}
+  111  echo ${my_array4[4]}
+  112  echo ${my_array4[5]}
+  113  for i in "${my_array2[@]"; doe echo "$i"; done
+for i in "${my_array2[@]"; do echo "$i"; done
+  114  for i in "${my_array2[@]"; do echo "$i"; done
+  115  for i in "${my_array2[@]}"; do echo "$i"; done
+  116  echo "${my_array2[*]}"
+  117  echo ${my_array2[*]}
+  118  echo ${my_array2[*]} |rev
+  119  i=123
+  120  c
+  121  clear
+  122  i=123
+  123  while [ $i -gt 0 ]; do echo $((i%2)); i=$((i/2));  done
+  124  i=123
+  125  mapfile -t bit_array < < (while [ $i -gt 0 ]; do echo $((i%2)); i=$((i/2));  done)
+  126  mapfile -t bit_array < <(while [ $i -gt 0 ]; do echo $((i%2)); i=$((i/2));  done)
+  127  echo ${bit_arrya[@]}
+  128  echo ${bit_array[@]}
+  129  echo ${bit_array[@]} | rev
+  130  clear
+  131  i=123
+  132  mapfile -t bit_array < <(while [ $i -gt 0 ]; do echo $((i%2)); i=$((i/2));  done)
+  133  echo ${bit_array[@]} | rev
+  134  i=123
+  135  mapfile -d bit_array < <(while [ $i -gt 0 ]; do echo $((i%2)); i=$((i/2));  done)
+  136  echo ${bit_array[@]} | rev
+  137  mkdir 20200708
+  138  cd 20200708
+  139  vim 01.sh
+  140  chmod 755 01.sh
+  141  ls -l
+  142  nano 01.sh
+  143  chmod 755 01.sh
+  144  ls -l
+  145  chmod 740 01.sh
+  146  ls -l
+  147  # 15 (dec) = 1111 (bin) = f (hexadecimal)
+  148  date
+  149  date -s
+  150  date -s "yyyymmdd"
+  151  date -s `yyyymmdd`
+  152  date --help
+  153  date -s %Y%m%d
+  154  clear
+  155  git init
+  156  git init my-repo
+  157  cd my-repo
+  158  touch README.md
+  159  git add README.md
+  160  git commit -m "add README to initial commit"
+  161  git config -- global user.name "ldinvalde"
+  162  git config --global user.name "ldinvalde"
+  163  Omit --global 
+  164  git commit -m "add README to initial commit"
+  165  git config --global user.name "ldinvalde"
+  166  git config --global user.email "lasma.dinvalde@gmail.com"
+  167  git clone https://github.com/ldinvalde/hello-world
+  168  cd hello-world
+  169  pwd
+  170  git branch my-branch
+  171  git checkout my-branch
+  172  nano file1.md
+  173  nano file2.md
+  174  git add file1.md file2.md
+  175  git commit -m "my snapshot"
+  176  git push --set-upstream origin my-branch
+  177  git init my-repo
+  178  cd my-repo
+  179  touch README.md
+  180  pwd
+  181  cd repo
+  182  cd hello-world
+  183  cd
+  184  pwd
+  185  cd 20200708/my-repo
+  186  cd hello-world
+  187  git pull
+  188  git checkout feature-a
+  189  git checkout my-branch
+  190  nano file1.md
+  191  fit add file1.md
+  192  git add file1.md
+  193  git commit -m "edit file1"
+  194  git push
+  195  clear
+  196  python
+  197  pwd
+  198  python
+  199  git commit -m "my snapshot"
+  200  python
+  201  nano f1.txt
+  202  python
+  203  ipython
+  204  idle
+  205  idle &
+  206  history
+  207  history > lesson7.txt
