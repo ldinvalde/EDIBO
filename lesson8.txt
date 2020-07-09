@@ -1,0 +1,73 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  PS1="LD$ "
+    4  git init
+    5  git clone https://github.com/ldinvalde/EDIBO
+    6  ls
+    7  cd EDIBO
+    8  nano test.txt
+    9  git add test.txt
+   10  git commit -m "my snapshot"
+   11  git config --global user.email "lasma.dinvalde@gmail.com"
+   12  git config --global user.name "ldinvalde"
+   13  git commit -m "my snapshot"
+   14  git push --set-upstream origin master
+   15  ls
+   16  rm test.txt
+   17  pwd
+   18  mkdir Python
+   19  cd Python
+   20  pwd
+   21  touch a.dat
+   22  ls -a
+   23  cat a.dat
+   24  echo 1 > a.dat
+   25  ls -l
+   26  echo a > a.dat
+   27  ls -l
+   28  echo A > a.dat
+   29  ls -l
+   30  printf A > b.dat
+   31  ls -l
+   32  cat a.dat
+   33  cat b.dat
+   34  #printf funkcija uzreiz pievieno prompt, jo by default nepārners jaunā rindā atšķirībā no echo funkcijas
+   35  hexdump
+   36  hexdump a.dat
+   37  #failā parādās sākotnējā adrese un faila izmers
+   38  hexdump -b a.dat
+   39  hexdump -b b.dat
+   40  hexdump -c b.dat
+   41  hexdump -c a.dat
+   42  hexdump -C a.dat
+   43  hexdump -C b.dat
+   44  a=`echo "Hello"`
+   45  hecdump -c $a
+   46  hexdump -c $a
+   47  echo A | hexdump -c
+   48  printf a | hexdump -C
+   49  printf A | hexdump -C
+   50  printf a | hexdump -o
+   51  printf a | hexdump -v
+   52  printf a | hexdump -d
+   53  printf a | hexdump -x
+   54  printf a | hexdump -n
+   55  printf a | hexdump -x
+   56  echo a | hexdump -x
+   57  printf abc | hexdump -x
+   58  printf abcde | hexdump -x
+   59  man hexdump
+   60  curl google.com
+   61  pwd
+   62  curl http://www.google.com/
+   63  curl google.com
+   64  echo Ā | hexdump
+   65  curl google.com |hexdump
+   66  curl google.com |hexdump | less
+   67  #0F = 15
+   68  #10 = 16
+   69  #1F = 31
+   70  #20 = 32
+   71  python
+   72  ipython
+   73  history > lesson8.txt
