@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Metadata goes in head -->
+<title>My First Page</title>
+
+<!-- External CSS connection -->
+<link rel="stylesheet" type="text/css" href="tiktaktoe.css">
+
+<!-- Internal CSS code -->
+<style>
+
+h1 {
+text-align: center;
+border: 3px solid red;
+color: blue;
+margin-top: 1000px;
+}
+
+p {
+background-color: grey;
+padding: 10px;
+margin-top: 100px;
+}
+
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.button1 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+button {
+    margin-top: 5px;
+}
+
+</style>
+<!-- Inline CSS added to elements under style="" -->
+</head>
+
+<body>
+
+<!-- Content goes in the body -->
+
+<h2>Go to..</h2>
+
+<!-- Link to sesction on the page, used not to make many files but to show understanding -->
+<a href="#Headings">Headings</a>
+<br>
+<a href="#Graph">Graph</a>
+<br>
+
+<!-- Button made using <a> tag -->
+<a class="button1" href="#Paragraph">Paragraph</a>
+<br>
+<a href="#List" class="button1">List</a>
+<br>
+
+<!-- Button made using button -->
+<button onclick="location.href='#Table'">Table</button>
+<br>
+<button onclick="location.href='#Image'">Image</button>
+
+
+<h1 id="Headings">Thi is my first tag!!!</h1>
+<h2>This is another heading</h2>
+<h6>This is another heading!!!!</h6>
+
+
+<p id="Paragraph">Lorem Ipsum is <strong>simply dummy text</strong> of the printing and typesetting industry. <em>Lorem Ipsum</em> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<p>jsalkdalsdjlaksjdlaksdjlaksjdlkasjdasdlkjasdlksajd
+sdljasdlkasjdlkasjlaskdsadas
+</p>
+
+
+<!-- Inline CSS code -->
+
+<h4 style="margin-top: 100px;">My Color List</h4>
+
+<!-- Ordered list -->
+<ol id="List">
+    <li>Red</li>
+    <li>Orange</li>
+    <li>Yellow
+        <ul>
+            <li>Sunflower</li>
+            <li>Banana
+                <ol>
+                    <li>Frozen Banana</li>
+                    <li>Non-Frozen Banana</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+</ol>
+
+<!-- Unordered list -->
+<ul>
+    <li><strong>Red</strong></li>
+    <li>Orange</li>
+    <li>Yellow</li>
+</ul>
+
+
+<!-- Link to a site -->
+<a href="wwww.google.com" style="margin-top:100px; margin-left:50px">Go to Google Search</a>
+
+<!-- Table -->
+<table style="margin-top: 100px;" id="Table">
+    <tr>
+        <td id="cell1">1</td>
+        <td id="cell2">2</td>
+        <td id="cell3">3</td>
+    </tr>
+    <tr>
+        <td id="cell4">4</td>
+        <td id="cell5">5</td>
+        <td id="cell6">6</td>
+    </tr>
+    <tr>
+        <td id="cell7">7</td>
+        <td id="cell8">8</td>
+        <td id="cell9">9</td>
+    </tr>
+</table>
+
+
+<h3 id="Image" style="margin-top: 100px;">Dog picture from site</h3>
+
+<!-- Image addition to site -->
+<img  src="http://i.imgur.com/Zl0A6erm.jpg">
+
+<h3 id="Graph" style="margin-top:100px">Graphic using SVG</h3>
+
+
+<!-- Graph made using SVG -->
+<svg  height="210" width="500" style="background-color: aquamarine;">
+<polygon points="200,10 250,190 160,210" style="fill:lime;stroke:purple;stroke-width:1" />
+</svg>
+
+</body>
+</html>
