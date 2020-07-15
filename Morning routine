@@ -1,0 +1,60 @@
+# Install nmp
+
+# For this part, use sudoer account on your UBUNTU 18.04 LTS.
+# Retrieve and install .NET SDK
+
+ wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb &&
+ sudo dpkg -i packages-microsoft-prod.deb &&
+ sudo apt-get update; 
+ sudo apt-get install -y apt-transport-https && 
+ sudo apt-get update && 
+ sudo apt-get install -y dotnet-sdk-3.1 &&
+ sudo apt-get install -y aspnetcore-runtime-3.1 &&
+
+# Get and install VSC
+ wget https://update.code.visualstudio.com/1.47.0/linux-deb-x64/stable -O vsc.deb &&
+ sudo dpkg -i vsc.deb
+
+# Next, you can login as ordinary user.
+# Node Version Manager - NVM is essential for Angular App building
+# For a fully manual install, execute the following lines to first clone the nvm repository into $HOME/.nvm, 
+# and then load nvm:
+
+export NVM_DIR="$HOME/.nvm" && (
+ git clone https://github.com/nvm-sh/nvm.git "$NVM_DIR"
+ cd "$NVM_DIR"
+ git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
+) && \. "$NVM_DIR/nvm.sh"
+
+# Install actual node version:
+nvm i 12
+
+# Verify the NODE version by: 
+
+node -v  # Should be like 12.x.x
+
+# Verify the NPM version by: 
+
+npn -v  # Should be like 6.x.x
+
+# Lastly, add these lines to your ~/.bashrc, ~/.profile, or ~/.zshrc file
+# to have it automatically sourced upon login or opening a new terminal.
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+
+
+
+# Install angular
+npm install -g @angular/cli
+
+#Create new app with name
+ng new my-app
+
+#Run the application
+cd my-app
+ng serve --open
+
+#open in Visual Studio
+code .
