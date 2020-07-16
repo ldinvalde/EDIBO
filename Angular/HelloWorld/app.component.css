@@ -1,0 +1,22 @@
+.make-it-inline {
+    display: inline;
+}
+img{
+    border-radius: 13px;
+    margin: 10 px;
+    border: 1px solid gray;
+}
+img:hover {
+    transform: scale(1.1);
+    transition: all .2s;
+    border-color: pink;
+}
+.make-it-inline {
+    display: inline;
+}
+.make-it-inline:hover{
+    padding: 20px;
+}
+h1.focus {
+    color: brown;
+}

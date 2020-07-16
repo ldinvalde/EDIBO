@@ -1,0 +1,11 @@
+<h1 tabindex="" contenteditable="">My Instagram</h1>
+
+<button (click)="toggle()">Rādīt/Nerādīt</button>
+<button (click)="increaseImageCount()">Vairāk bildes</button>
+
+<div *ngIf="isVisible">
+  <div class="make-it-inline" *ngFor="let image of imageSources">
+    <img [src]="image" alt="bilde">
+  </div>
+</div>
+
