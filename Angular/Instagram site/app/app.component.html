@@ -1,0 +1,14 @@
+<h1 class="text-center" tabindex="" contenteditable="">My Instagram</h1>
+
+<div class=button-group>
+<button (click)="toggle()" type="button" class="btn btn-secondary btn-lg ">Rādīt/Nerādīt</button>
+<button (click)="increaseImageCount() " type="button" class="btn btn-secondary btn-lg ">Vairāk bildes</button>
+</div>
+
+<div class="container">
+  <div *ngIf="isVisible">
+    <div class="make-it-inline" *ngFor="let image of imageSources">
+      <img [src]="image" alt="bilde" class="image rounded ">
+    </div>
+  </div>
+</div>

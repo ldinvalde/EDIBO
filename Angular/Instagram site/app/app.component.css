@@ -1,0 +1,38 @@
+.make-it-inline {
+    display: inline;
+}
+img{
+    border-radius: 13px;
+    margin: 10 px;
+    border: 1px solid gray;
+}
+img:hover {
+    transition: .2s;
+    border-color:rgb(181, 181, 181);
+    border-width: 0.1cm;
+}
+.make-it-inline {
+    display: inline;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    padding: 1em;
+}
+h1.focus {
+    color: brown;
+}
+.container {
+    padding: 1em;
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 50px;
+}
+button{
+    margin: .10cm;
+    background-color: rgb(84, 47, 47);
+}
