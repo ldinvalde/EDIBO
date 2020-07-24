@@ -1,0 +1,5 @@
+
+
+- #! /bin/bash - bash interpretator.
+
+Variables is better to write in capital letters making the text better understandable.

@@ -1,0 +1,34 @@
+Oragnizational commands.
+
+- mkdir "name" - make a directory in the current folder.
+- rmdir "name" - delete the directory.
+
+To save information to new file use:
+ex. - history > name.txt
+
+- cp - copy file.
+- mv - move file, rename file.
+- rm - remove file.
+
+- cat file-name - see contents of the file.
+
+- whereis command-name - finds command location in files.
+
+- # text - adding comment to bash.
+
+
+
+Access.
+
+chmod 644 file.name - change access for a file.
+chmod -R 755 directory - change access to all files in a directory.
+
+Here the digits 7, 5, and 4 each individually represent the permissions for the user, 
+group, and others, in that order. Each digit is a combination of the numbers 4, 2, 1, and 0:
+
+4 stands for "read",
+2 stands for "write",
+1 stands for "execute", and
+0 stands for "no permission."
+
+

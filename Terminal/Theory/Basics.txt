@@ -1,0 +1,23 @@
+MacOs and Linu commands are similar, practcally identical.
+
+Basic termial commands are:
+
+- Ctrl + Alt + t - new window.
+- Ctrl + Shift + t - new tab.
+
+- Ctrl + l - clear the screen.
+- clear - clear the screen.
+
+- Ctrl + d - exit terminal.
+- exit - exit terminal.
+
+- history - shows all previously used commands.
+- echo $0 - find out what are you working with - shell/bash.
+- man command - command manual.
+
+- nano - text editor.
+- vim - text editor.
+    When using text editors, you may add name of the composing file upon creation.
+
+- sh - shell terminal view.
+- bash - bash terminal view.

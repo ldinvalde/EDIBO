@@ -1,0 +1,61 @@
+Navigation commands.
+
+- pwd - /printowrking directory/ - used to show current location in files.
+- *.txt - show all txt files in the directory.
+
+
+
+List command variations.
+
+- ls - list of containing directories, files.
+- ls/ - system root info.
+- ls -l - list of containing directories, files and their details.
+            Shows creation date creator, access
+- ls | head - Shows first 10 from the list.
+- ls | tail - Shows last 10 from the list.
+            To name the needed amount of showd items add -n (n as amount).
+- ls -la - in alphabeical order with complete details.
+- ls -tl - ordered according to time - latest first.
+
+
+
+Access details.
+
+drwxrwxrwx 1 user user-group size time file-name
+- d - directory, may also be l for links and - for files.
+- rwx - read, write, execute access to user/user group/ others
+- 1 - objects in directory
+
+
+
+Cat command.
+
+- cat adress - shows the content of files
+- cat >example1 - creates file that you can complet instantly.
+
+
+
+Current directory command variations.
+
+- cd ~/Desktop - go to Desktop folder.
+- cd folder - go to underlying folder.
+- cd .. - go one folder up.
+- cd - go home.
+- cd / + Tab(x2) - Check folder content, including hidden files.
+
+    Each adress as absolute address that contains all named files and relative address that contains 
+    named and hidden files.
+
+    
+
+Word count command variations.
+
+When assessing wc output, take into account white space, as it is used to separate 
+words - 1 word + 1 whitespace.
+
+- wc -l - number of lines.
+- wc -c - number of bytes.
+- wc -w - number of words.
+- wc -m - number of charecters.
+- wc -L - longest line.
+- wc - automatically shows: number of lines / number of words / number of bytes.

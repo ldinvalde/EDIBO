@@ -1,0 +1,9 @@
+Variable commands used in bash.
+
+- a=x
+- echo $a - to show variable result.
+- echo $((a+z)) - syntax of calculations using exho.
+
+- d=`date`
+- echo `date` - when using commands use backticks.
+

@@ -35,7 +35,7 @@ node -v  # Should be like 12.x.x
 
 # Verify the NPM version by: 
 
-npn -v  # Should be like 6.x.x
+npm -v  # Should be like 6.x.x
 
 # Lastly, add these lines to your ~/.bashrc, ~/.profile, or ~/.zshrc file
 # to have it automatically sourced upon login or opening a new terminal.
